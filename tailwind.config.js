@@ -14,7 +14,7 @@ module.exports = {
         'me': "url('./public/img/yo.jpg')"
       },
       colors: {
-        'primary': "#fe5353;",
+        'primary': "#ce2323;",
         'secundary': "#f07684"
       },
       fontFamily: {
