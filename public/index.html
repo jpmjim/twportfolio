@@ -11,15 +11,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Portafolio en Tailwind</title>
   </head>
-  <body>
+  <body class="lg:flex">
     <header>
-      <nav class="flex justify-between items-center text-4xl p-4 bg-gray-50">
-        <img class="w-16 h-16 " src="./img/log1.png" alt="">
-        <i class="bi bi-list hover:text-primary"></i>
+      <nav class="flex justify-between items-center text-4xl p-4 bg-gray-100 lg:w-72 lg:h-screen lg:flex-col ">
+        <section class="lg:h-1/5 lg:w-full lg:flex lg:justify-center lg:items-center">
+          <img class="w-16 h-16 lg:w-24 lg:h-24" src="./img/log1.png" alt="">
+        </section>
+        <i class="bi bi-list hover:text-primary lg:hidden"></i>
+        <section class="hidden lg:flex flex-col justify-center space-y-4 list-none lg:items-center text-xl font-semibold lg:h-3/5 w-full">
+          <li>Home</li>
+          <li>About</li>
+          <li>Portfolio</li>
+          <li>Service</li>
+          <li>Contact</li>
+        </section>
+        <section class="hidden lg:inline-flex lg:h-1/5 items-center justify-center">
+          <p class=" italic text-lg opacity-60 ">2022 Perú</p>
+        </section>
       </nav>
     </header>
     <main>
-      <section class="w-full h-auto bg-blend-luminosity bg-primary bg-ban4 bg-cover bg-right" id="home">
+      <section class="w-full h-auto bg-blend-luminosity bg-primary bg-ban4 bg-cover bg-right lg:w-full lg:h-screen " id="home">
         <div class="flex flex-col justify-around items-center p-10">
           <img class="w-36 h-36 ring-offset-2 ring-4 rounded-lg ring-white mt-10" src="./img/yo.jpg" alt="">
           <p class="text-2xl font-bold text-center mt-4 p-2">Hola soy, <span class="text-white">Jimmy J. Pecho Malqui</span></p>
@@ -32,6 +44,7 @@
           <p class="italic font-medium text-sm text-center mt-4">"Soy un desarrollador centrado en la creación de sitios web fáciles de usar para mis ususarios, además  poderlos conocer un poco más. Es muy placentero de rodearme de nuevos amigos."</p>
         </div>
       </section>
+      
     </main>
   </body>
 </html>
