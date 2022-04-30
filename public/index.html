@@ -11,19 +11,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Portafolio en Tailwind</title>
   </head>
-  <body class="lg:flex">
-    <header>
-      <nav class="flex justify-between items-center text-4xl p-4 bg-gray-100 lg:w-72 lg:h-screen lg:flex-col lg:p-16">
-        <section class="lg:h-1/5 w-full flex justify-center  items-center">
+  <body>
+    <header class="lg:fixed">
+      <nav class="flex justify-between items-center text-4xl p-4 bg-gray-100 lg:w-72 lg:h-screen lg:flex-col lg:p-16 ">
+        <section class="lg:h-1/5 w-full flex justify-start  items-center lg:justify-center">
           <img class="w-16 h-16 lg:w-24 lg:h-24" src="./img/log1.png" alt="">
         </section>
         <i class="bi bi-list hover:text-primary lg:hidden"></i>
         <section class="hidden lg:flex flex-col justify-center space-y-4 list-none lg:items-stretch text-xl font-semibold lg:h-3/5 w-full">
-          <a href=""><li class="bi bi-house-door-fill hover:text-primary"> Home</li></a>
-          <a href=""><li class="bi bi-person-fill hover:text-primary"> About</li></a>
-          <a href=""><li class="bi bi-briefcase-fill hover:text-primary"> Portfolio</li></a>
-          <a href=""><li class="bi bi-file-code-fill hover:text-primary"> Skills</li></a>
-          <a href=""><li class="bi bi-envelope-fill hover:text-primary"> Contact</li></a>
+          <a href="#home"><li class="bi bi-house-door-fill hover:text-primary"> Home</li></a>
+          <a href="#about"><li class="bi bi-person-fill hover:text-primary"> About</li></a>
+          <a href="#portfolio"><li class="bi bi-briefcase-fill hover:text-primary"> Portfolio</li></a>
+          <a href="#skills"><li class="bi bi-file-code-fill hover:text-primary"> Skills</li></a>
+          <a href="#contact"><li class="bi bi-envelope-fill hover:text-primary"> Contact</li></a>
         </section>
         <section class="hidden lg:inline-flex lg:h-1/5 w-full items-center justify-start">
           <p class=" italic text-lg opacity-60 ">© 2022 Perú - J2PM</p>
@@ -31,7 +31,7 @@
       </nav>
     </header>
     <main>
-      <section class="w-full h-auto bg-blend-luminosity bg-primary bg-ban4 bg-cover bg-right lg:w-full lg:h-screen" id="home">
+      <section class="bg-blend-luminosity bg-primary bg-ban4 bg-cover bg-right lg:pl-80 lg:w-full lg:h-screen" id="home">
         <div class="flex flex-col justify-around items-center p-10 lg:flex lg:h-full  lg:justify-center lg:w-full lg:items-end lg:px-28 lg:space-y-4">
           <img class="w-36 h-36 ring-offset-2 ring-4 rounded-lg ring-white mt-10 lg:w-56 lg:h-56 lg:mr-9" src="./img/yo.jpg" alt="">
           <p class="text-2xl font-bold text-center mt-4 p-2 lg:text-3xl lg:w-80 lg:p-0 lg:h-30">Hola soy, <span class="text-white">Jimmy J. Pecho Malqui</span></p>
@@ -41,8 +41,24 @@
               <i class="bi bi-youtube hover:text-white"></i>
               <i class="bi bi-linkedin hover:text-white"></i>
           </div>
-          <p class="italic font-medium text-sm text-center mt-4 lg:text-xl lg:text-white lg:font-normal">"Soy un desarrollador centrado en la creación de sitios web fáciles de usar para mis ususarios, además  poderlos conocer un poco más. Es muy placentero de rodearme de nuevos amigos."</p>
+          <p class="italic font-medium text-base text-center mt-4 lg:text-xl lg:text-white lg:font-normal">"Soy un desarrollador centrado en la creación de sitios web fáciles de usar para mis ususarios, además  poderlos conocer un poco más. Es muy placentero de rodearme de nuevos amigos."</p>
         </div>
+      </section>
+      <section class="w-full h-auto p-6 space-y-4 lg:w-auto lg:h-screen lg:bg-cyan-300 lg:pl-96 lg:pr-14" id="about">
+        <h2 class="text-primary text-2xl">About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore quasi quae dolor natus facere labore debitis provident veniam repellendus porro at autem delectus odit, voluptatem blanditiis architecto vero nemo.</p>
+      </section>
+      <section class="w-full h-auto p-6 space-y-4 lg:w-auto lg:h-screen lg:bg-primary lg:pl-96 lg:pr-14" id="portfolio">
+        <h2 class=" text-primary text-2xl lg:text-white">Portfolio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore quasi quae dolor natus facere labore debitis provident veniam repellendus porro at autem delectus odit, voluptatem blanditiis architecto vero nemo.</p>
+      </section>
+      <section class="w-full h-auto p-6 space-y-4 lg:w-auto lg:h-screen lg:bg-cyan-300 lg:pl-96 lg:pr-14" id="skills">
+        <h2 class="text-primary text-2xl">Skills</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore quasi quae dolor natus facere labore debitis provident veniam repellendus porro at autem delectus odit, voluptatem blanditiis architecto vero nemo.</p>
+      </section>
+      <section class="w-full h-auto p-6 space-y-4 lg:w-auto lg:h-screen lg:bg-primary lg:pl-96 lg:pr-14" id="contact">
+        <h2 class="text-primary text-2xl lg:text-white">Contact</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore quasi quae dolor natus facere labore debitis provident veniam repellendus porro at autem delectus odit, voluptatem blanditiis architecto vero nemo.</p>
       </section>
     </main>
   </body>
